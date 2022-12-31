@@ -147,6 +147,7 @@ function Home() {
               96 Grey Street, Tauranga 3110, New Zealand
             </p>
             <iframe
+              title="Google maps"
               className="card-img-bottom"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d986.0659558194227!2d176.16806276138598!3d-37.68663766622028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x18d14e52e117cecc!2sMDH%20Gaming!5e0!3m2!1sen!2snz!4v1672277169430!5m2!1sen!2snz"
               style={{ border: 0 }}
