@@ -29,6 +29,7 @@ function Home() {
           <img
             className="card-img-top rounded-circle img-fluid"
             src={require("./Images/Logo.jpg")}
+            alt="mdhbg.jpg"
           />
           <div className="card-body">
             <h1 className="card-title p-2 rounded-pill bg-secondary text-light text-center">
@@ -85,18 +86,22 @@ function Home() {
           <img
             src={require("./Images/monsterdrinks.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/vdrinks.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/mdhsnacks.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/mdhdrinks.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
         </div>
 
@@ -109,18 +114,22 @@ function Home() {
           <img
             src={require("./Images/fortnight.jpeg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/league.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/valorant.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/pubg.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <div>
             <p className="card-text font-weight-bolder text-center">
@@ -161,34 +170,42 @@ function Home() {
           <img
             src={require("./Images/Logo.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/mdhlogo.png")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/mdhdrinks.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/mdhsnacks.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhsnacks.jpg"
           />
           <img
             src={require("./Images/mdhbg.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhbg.jpg"
           />
           <img
             src={require("./Images/mdhgroup.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhgroup.jpg"
           />
           <img
             src={require("./Images/mdhgamers.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="mdhgamers.jpg"
           />
           <img
             src={require("./Images/mdhbday'.jpg")}
             className="card-image-bottom m-1 img-fluid"
+            alt="bday"
           />
         </div>
       </div>

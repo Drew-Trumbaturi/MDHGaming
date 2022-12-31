@@ -42,7 +42,7 @@ function MyNavbar() {
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end text-light">
           <a href="#login" className="text-light text-decoration-none">
-            Login <img src={Login} width="20" height="20" />{" "}
+            Login <img src={Login} width="20" height="20" alt="mdhbg.jpg" />{" "}
           </a>
         </Navbar.Collapse>
       </Container>
