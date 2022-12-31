@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="container bg-light">
       <footer className="py-3 ">
-        <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+        {/* <ul className="nav justify-content-center border-bottom pb-3 mb-3">
           <Link to="/" className="nav-item text-decoration-none">
             <li className="nav-link px-2 text-muted">Home</li>
           </Link>
@@ -32,7 +32,8 @@ function Footer() {
               Big Brother Site
             </a>
           </li>
-        </ul>
+        </ul> */}
+        <hr />
         <div className="row">
           <div className="col-md-4">
             <Link to="/">
