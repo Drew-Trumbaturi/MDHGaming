@@ -8,20 +8,20 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Nav";
 import Login from "./Components/Login";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Navbar />
       <div className="container bg-light">
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
     </div>
   );
-}
+};
 
 function Home() {
   return (
