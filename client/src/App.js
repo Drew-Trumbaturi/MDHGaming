@@ -1,11 +1,12 @@
 import React from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./Components/Styles.css";
 // We use Route in order to define the different routes of our application
 import { Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer";
-
 // We import all the components we need in our app
 import Navbar from "./Components/Nav";
+import Login from "./Components/Login";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="container bg-light">
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
@@ -105,38 +107,40 @@ function Home() {
           />
         </div>
 
-        <div className="card border-light bg-light">
-          <div className="card-body">
-            <h2 className="card-title p-2 rounded-pill bg-secondary text-light text-center">
-              Some of our most popular games
-            </h2>
+        <section id="populargames">
+          <div className="card border-light bg-light">
+            <div className="card-body">
+              <h2 className="card-title p-2 rounded-pill bg-secondary text-light text-center">
+                Some of our most popular games
+              </h2>
+            </div>
+            <img
+              src={require("./Images/fortnight.jpeg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhbg.jpg"
+            />
+            <img
+              src={require("./Images/league.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhbg.jpg"
+            />
+            <img
+              src={require("./Images/valorant.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhbg.jpg"
+            />
+            <img
+              src={require("./Images/pubg.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhbg.jpg"
+            />
+            <div>
+              <p className="card-text font-weight-bolder text-center">
+                And so much more!
+              </p>
+            </div>
           </div>
-          <img
-            src={require("./Images/fortnight.jpeg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhbg.jpg"
-          />
-          <img
-            src={require("./Images/league.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhbg.jpg"
-          />
-          <img
-            src={require("./Images/valorant.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhbg.jpg"
-          />
-          <img
-            src={require("./Images/pubg.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhbg.jpg"
-          />
-          <div>
-            <p className="card-text font-weight-bolder text-center">
-              And so much more!
-            </p>
-          </div>
-        </div>
+        </section>
 
         <div className="card border-light bg-light">
           <div className="card-body">
@@ -161,64 +165,68 @@ function Home() {
         </div>
       </div>
 
-      <div className="card border-light bg-light">
-        <div className="card-body">
-          <h2 className="card-title p-2 rounded-pill bg-secondary text-light text-center">
-            Gallery
-          </h2>
+      <section id="gallery">
+        <div className="card border-light bg-light">
+          <div className="card-body">
+            <h2 className="card-title p-2 rounded-pill bg-secondary text-light text-center">
+              Gallery
+            </h2>
+          </div>
+          <div className="card-columns">
+            <img
+              src={require("./Images/Logo.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhbg.jpg"
+            />
+            <img
+              src={require("./Images/mdhlogo.png")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhbg.jpg"
+            />
+            <img
+              src={require("./Images/mdhdrinks.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhbg.jpg"
+            />
+            <img
+              src={require("./Images/mdhsnacks.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhsnacks.jpg"
+            />
+            <img
+              src={require("./Images/mdhbg.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhbg.jpg"
+            />
+            <img
+              src={require("./Images/mdhgroup.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhgroup.jpg"
+            />
+            <img
+              src={require("./Images/mdhgamers.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="mdhgamers.jpg"
+            />
+            <img
+              src={require("./Images/mdhbday'.jpg")}
+              className="card-image-bottom m-1 img-fluid"
+              alt="bday"
+            />
+          </div>
         </div>
-        <div className="card-columns">
-          <img
-            src={require("./Images/Logo.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhbg.jpg"
-          />
-          <img
-            src={require("./Images/mdhlogo.png")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhbg.jpg"
-          />
-          <img
-            src={require("./Images/mdhdrinks.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhbg.jpg"
-          />
-          <img
-            src={require("./Images/mdhsnacks.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhsnacks.jpg"
-          />
-          <img
-            src={require("./Images/mdhbg.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhbg.jpg"
-          />
-          <img
-            src={require("./Images/mdhgroup.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhgroup.jpg"
-          />
-          <img
-            src={require("./Images/mdhgamers.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="mdhgamers.jpg"
-          />
-          <img
-            src={require("./Images/mdhbday'.jpg")}
-            className="card-image-bottom m-1 img-fluid"
-            alt="bday"
-          />
-        </div>
-      </div>
+      </section>
 
-      <div className="card bg-light text-center border-light">
-        <div className="card-body">
-          <h2 className="card-title p-2 rounded-pill bg-secondary text-light">
-            Testimonials
-          </h2>
-          <div className="elfsight-app-5da166fe-8483-4b7e-ba65-47fcdac61236 card-text"></div>
+      <section id="testimonials">
+        <div className="card bg-light text-center border-light">
+          <div className="card-body">
+            <h2 className="card-title p-2 rounded-pill bg-secondary text-light">
+              Testimonials
+            </h2>
+            <div className="elfsight-app-5da166fe-8483-4b7e-ba65-47fcdac61236 card-text"></div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
