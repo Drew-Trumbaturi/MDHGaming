@@ -13,7 +13,7 @@ export default function MyNavbar() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
-  const [isNavClosed, setIsNavClosed] = useState(true);
+  //const [isNavClosed, setIsNavClosed] = useState(true);
   //const handleNavclosed = () => setIsNavClosed(!isNavClosed);
 
   const openInNewTab = (url) => {
