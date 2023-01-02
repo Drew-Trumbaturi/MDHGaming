@@ -15,7 +15,7 @@ function App() {
       <div className="container bg-light">
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/Login" element={<Login />} />
+          <Route exact path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
