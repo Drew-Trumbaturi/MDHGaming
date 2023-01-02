@@ -15,7 +15,7 @@ function App() {
       <div className="container bg-light">
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
+          <Route exact path="/Login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
@@ -63,7 +63,7 @@ function Home() {
             <h2 className="card-title p-2 rounded-pill bg-secondary text-light">
               Opening Hours
             </h2>
-            <ul className="card-text ">
+            <ul className="card-text center">
               <li className="font-weight-bolder">Monday: Closed</li>
               <li className="font-weight-bolder">Tuesday: 3pm - 9pm</li>
               <li className="font-weight-bolder">Wednesday: 3pm - 9pm</li>
