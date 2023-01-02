@@ -24,7 +24,11 @@ export default function Login() {
             <h3 className="Auth-form-title">Sign In</h3>
             <div className="text-center">
               Not registered yet?{" "}
-              <a className="link-primary" onClick={changeAuthMode}>
+              <a
+                href="#signup"
+                className="link-primary"
+                onClick={changeAuthMode}
+              >
                 Sign Up
               </a>
             </div>
@@ -83,7 +87,7 @@ export default function Login() {
           <h3 className="Auth-form-title">Sign In</h3>
           <div className="text-center">
             Already registered?{" "}
-            <a className="link-primary" onClick={changeAuthMode}>
+            <a href="#signin" className="link-primary" onClick={changeAuthMode}>
               Sign In
             </a>
           </div>
@@ -178,7 +182,7 @@ export default function Login() {
             </button>
           </div>
           <p className="text-right mt-2">
-            Forgot <a href="#">password?</a>
+            Forgot <a href="#forgotpassword">password?</a>
           </p>
         </div>
       </form>

@@ -14,7 +14,7 @@ export default function MyNavbar() {
   }, []);
 
   const [isNavClosed, setIsNavClosed] = useState(true);
-  const handleNavclosed = () => setIsNavClosed(!isNavClosed);
+  //const handleNavclosed = () => setIsNavClosed(!isNavClosed);
 
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noreferrer");
