@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "../Images/Logo.jpg";
 import Login from "../Images/Login.png";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
 export default function MyNavbar() {
